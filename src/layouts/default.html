@@ -1,0 +1,96 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }} Paperinkeräys tänään</title>
+	<link rel="stylesheet" href="{{root}}assets/css/app.css">
+  </head>
+  <body class="{{page}}">
+  <header>
+
+<div class="mobile-toggle" data-responsive-toggle="primary-menu" data-hide-for="large">
+  <button class="menu-icon" type="button" data-toggle="primary-menu"></button>
+  <div class="mobile-toggle-title">Menu</div>
+</div>
+
+
+<div class="row">
+
+<div class="header-logo columns small-7 medium-5 large-3"><img src="assets/img/paperinkerays-logo.png" width="270" alt="Paperinkeräys 2017"></div><!--/logo-->
+
+<div class="navigation columns small-12 large-9" id="primary-menu">
+
+  <nav>
+    <ul class="dropdown menu" data-dropdown-menu>
+        <li class="index-link"><a href="{{root}}index.html">Etusivu</a></li>
+		<li class="paakirjoitus-link"><a href="{{root}}paakirjoitus.html">Pääkirjoitus</a></li>
+		<li class="jatehuolto-link"><a href="{{root}}jatehuolto.html">Jätehuolto</a></li>
+		<li class="tietoturva-link"><a href="{{root}}tietoturva.html">Tietoturva</a></li>
+		<li class="kuormalava-link"><a href="{{root}}kuormalava.html">Kuormalava</a></li>
+		<li class="paperinkerays-link"><a href="http://www.paperinkerays.fi/" target="_blank">paperinkeräys.fi</a></li>
+    </ul>
+   </nav>
+ </div>
+
+</div>
+
+
+  </header>
+
+	{{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+	{{> body}}
+
+	<footer>
+	<div class="prefooter">
+	<div class="row">
+
+		<div class="columns small-12 medium-4 materiaalit">
+			<h5>Materiaalit</h5>
+			<a href="#" target="_blank" class="materiaali">Vuosikertomus 2016 (PDF)</a>
+		</div><!--/materiaalit-->
+
+		<div class="columns small-12 medium-4 yhteystiedot">
+			<h5>Yhteystiedot</h5>
+			<p>Paperinkeräys Oy</p>
+			<p>Porkkalankatu 20 A, PL 143</p>
+			<p>00181 Helsinki</p>
+			<br>
+			<p>(09) 228 191</p>
+			<p>info@paperinkerays.fi</p>
+		</div><!--/yhteystiedot-->
+
+		<div class="columns small-12 medium-4 seuraa">
+			<h5>Seuraa meitä</h5>
+			<a href="https://www.facebook.com/paperinkerays" target="_blank" class="some-icon facebook">{{> facebook-icon}}</a>
+			<a href="https://www.twitter.com/Paperinkerays" target="_blank" class="some-icon twitter">{{> twitter-icon}}</a>
+			<a href="http://www.linkedin.com/company/paperinker-ys-oy" target="_blank" class="some-icon linkedin">{{> linkedin-icon}}</a>
+		</div><!--/seuraa-meita-->
+
+	</div>
+	</div><!--/prefooter-->
+
+	<div class="site-footer">
+	<div class="row">
+
+		<nav class="footer-nav columns small-12 large-6">
+			<ul>
+				<li><a href="http://www.paperinkerays.fi/" target="_blank">paperinkerays.fi</a> | </li>
+				<li><a href="#" target="_blank">Rekisteriseloste</a> | </li>
+				<li><a href="#" target="_blank">Käyttöehdot</a></li>
+			</ul>
+		</nav>
+
+		<div class="footer-info columns small-12 large-6">&copy; Paperinkeräys-konserni 2016</div><!--/footer-info-->
+
+	</div>
+	</div><!--/site-footer-->
+	</footer>
+
+	<script src="{{root}}assets/js/jquery.colorbox-min.js"></script>
+	<script src="{{root}}assets/js/app.js"></script>
+  </body>
+</html>

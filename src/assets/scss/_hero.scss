@@ -1,0 +1,119 @@
+.hero { // Front Page hero
+	background-color: $dark-green;
+	color: #fff;
+	padding: 3rem 1rem;
+	background-image: url('../../assets/img/2017.svg');
+	background-position: center top -7px;
+	background-size: 105% auto;
+	background-repeat: no-repeat;
+
+	@include breakpoint(large) {
+		padding: 3rem 1.5rem 0;
+		background-position: center bottom -15px;
+	}
+
+	h1 {
+		text-align: center;
+		position: relative;
+		margin-bottom: 3rem;
+
+		@include breakpoint(medium) {
+			text-align: left;
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+.hero-content h1:after {
+
+	content: '"';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -5.5rem;
+	font-size: 300%;
+
+		@include breakpoint(medium) {
+			left: 1rem;
+			bottom: -11rem;
+		}
+
+}
+
+.hero-content p {
+
+	@include breakpoint(medium) {
+		padding-left: 4rem;
+	}
+}
+
+.toimitusjohtaja-nimi {
+	color: $black;
+	margin-bottom: 2rem;
+}
+
+.toimitusjohtaja-image {
+	display: none;
+
+	@include breakpoint(large) {
+		display: block;
+	}
+}
+
+.page-hero { // Hero on normal pages
+
+	padding: 3rem 1.5rem;
+
+	@include breakpoint(medium) {
+		padding: 5.5rem 1.5rem;
+	}
+
+	.slogan {
+		color: #fff;
+		text-align: center;
+		position: relative;
+		font-size: 400%;
+
+		&:before {
+			content: '"';
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			top: -1rem;
+		}
+	}
+}
+
+.page-hero .link-box {
+
+	.link-box-content {
+		width: 100%;
+		max-width: 100%;
+		background: #fff;
+		padding: 1rem;
+		margin-bottom: 1rem;
+
+		@include breakpoint(medium) {
+			width: 400px;
+		}
+	}
+
+}
+
+@include breakpoint(medium) {
+
+	.link-box-content.infografiikka {
+		float: right;
+	}
+
+	.link-box-content.video {
+		float: left;
+	}
+
+}
+
+.hero-jatehuolto {
+	background: url('../../assets/img/jatehuolto.jpg');
+	background-size: cover;
+	background-position: top center;
+}

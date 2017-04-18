@@ -1,0 +1,115 @@
+header {
+	padding: 0.9rem 0 0.8rem 0;
+	position: relative;
+}
+
+.mobile-toggle {
+	width: 85px;
+	position: absolute;
+	background: none;
+	color: $dark-green;
+	right: 1rem;
+	top: 3rem;
+} 
+
+.menu-icon {
+	position: absolute !important;
+	right: 0.5rem;
+    top: 0.3rem;
+}
+
+.menu-icon::after {
+    background: $dark-green !important;
+    box-shadow: 0 7px 0 $dark-green, 0 14px 0 $dark-green !important;
+}
+
+
+.navigation {
+	margin-top: 1.2rem;
+	padding: 1rem 0 0.4rem;
+	border-top: 1px solid #ebebeb;
+
+	ul {
+		list-style: none;
+	}
+
+	li {
+		display: inline-block !important;
+		text-transform: uppercase;
+		width: 100%;
+
+		a {
+			color: $green;
+		}
+
+	}
+
+	.paperinkerays-link {
+		text-transform: none;
+
+		a {
+			color: $black;
+			position: relative;
+
+			&:after {
+				position: absolute;
+				content: "";
+				width: 15px;
+				height: 15px;
+				margin-left: 0.4rem;
+				margin-top: 0.1rem;
+				background: url('../../assets/img/new-window.svg');
+				background-size: cover;
+			}
+		}
+
+	}
+
+}
+
+@include breakpoint(medium) {
+
+	.navigation {
+		padding: 1.5rem 1rem 0.8rem;
+
+		li {
+			width: 49%;
+		}
+	}
+
+}
+
+@include breakpoint(large) {
+
+	.navigation {
+		margin-top: 0;
+		border-top: 0;
+
+		li {
+			width: auto;
+			margin-left: 0.5rem;
+			padding-top: 0.2rem;
+		}
+	}
+
+}
+
+// Current nav link
+
+.index .index-link a,
+.paakirjoitus .paakirjoitus-link a,
+.jatehuolto .jatehuolto-link a,
+.tietoturva .tietoturva-link a,
+.kuormalava .kuormalava-link a {
+
+	@include breakpoint(large) {
+		border-bottom: 3px solid $dark-green;
+
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.mobile-toggle {
+		top: 2rem;
+	}
+}

@@ -1,0 +1,67 @@
+.avainluvut, .kokonaisuudet, .tuottajavastuu, .organisaatio {
+	padding: 3rem 1.5rem;
+
+	@include breakpoint(medium) {
+		padding: 3rem 2rem;
+	}
+}
+
+.avainluvut {
+	background-image: url('../../assets/img/2016.svg');
+	background-position: center;
+	background-size: cover;
+}
+
+.kokonaisuudet {
+	background-color: $light-gray;
+	background-image: url('../../assets/img/paperi.svg');
+	background-position: center;
+	background-size: cover;
+
+	.columns {
+		padding: 0;
+	}
+}
+
+.kokonaisuus {
+
+	img {
+		margin: 2rem auto;
+		display: block;
+
+		@include breakpoint(medium) {
+			max-height: 110px;
+		}
+
+		@include breakpoint(large) {
+			max-height: 165px;
+		}
+
+	}
+
+	@include breakpoint(medium) {
+		margin-right: 6%;
+		width: 29% !important;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	@include breakpoint(large) {
+		margin-right: 2%;
+		width: 32% !important;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+}
+
+.tuottajavastuu {
+	background-color: $dark-green;
+	background-image: url('../../assets/img/kerays-green.svg');
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+}

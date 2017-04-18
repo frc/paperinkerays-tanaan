@@ -1,0 +1,28 @@
+.page-content {
+	padding: 2.5rem 0.5rem;
+}
+
+.columns.content-image {
+	padding: 0 1.3rem;
+	margin-bottom: 1.5rem;
+
+	@include breakpoint(medium) {
+		padding: 0 0.8rem 0 1.9rem;
+		margin-top: 1.5rem;
+		margin-bottom: 4rem;
+	}
+}
+
+.columns.content-text {
+	margin-bottom: 2.5rem;
+	padding: 0 1.3rem;
+
+	@include breakpoint(medium) {
+		padding: 0 2rem 0 0.8rem;
+		margin-top: 1.2rem;
+	}
+}
+
+.page-avainluvut {
+	padding: 0 0.7rem;
+}

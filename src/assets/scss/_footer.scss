@@ -1,0 +1,96 @@
+.prefooter {
+	background: $medium-gray;
+	text-align: center;
+	padding: 2rem 1rem 0 1rem;
+
+	h5 {
+		background: #fff;
+		text-transform: uppercase;
+		margin-bottom: 2rem;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+}
+
+.materiaalit, .yhteystiedot, .seuraa {
+	margin-bottom: 2rem;
+}
+
+.some-icon {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: 0 0.5rem;
+}
+
+.materiaali {
+	color: $black !important;
+	display: inline-block;
+	position: relative;
+	margin-top: 2.8rem;
+
+	&:before {
+		content: "";
+		background: url('../../assets/img/pdf.svg');
+		background-size: cover;
+		width: 30px;
+		height: 35px;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: -2.8rem;
+	}
+}
+
+.site-footer {
+	background: $dark-green;
+	color: #fff;
+	padding: 1.2rem 0 0.2rem 0;
+	text-align: center;
+
+	.footer-nav {
+		list-style: none;
+
+		@include breakpoint(large) {
+			text-align: left;
+		}
+	}
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		color: #fff;
+		position: relative;
+		margin-right: 1.5rem;
+		&:hover, &:focus {
+			color: #fff;
+			text-decoration: underline;
+		}
+
+		&:after {
+			position: absolute;
+			content: "";
+			width: 15px;
+			height: 15px;
+			margin-left: 0.4rem;
+			margin-top: 0.3rem;
+			background: url('../../assets/img/new-window-white.svg');
+			background-size: cover;
+		}
+
+	}
+
+	.footer-info {
+
+		@include breakpoint(large) {
+			text-align: right;
+		}
+
+	}
+
+}
