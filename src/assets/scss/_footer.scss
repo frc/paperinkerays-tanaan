@@ -2,15 +2,24 @@
 	background: $medium-gray;
 	text-align: center;
 	padding: 2rem 1rem 0 1rem;
+	color: $gray;
 
 	h5 {
 		background: #fff;
 		text-transform: uppercase;
 		margin-bottom: 2rem;
+		@include stainlesslight;
+		padding: 0.4rem 0 0.2rem 0;
 	}
 
 	p {
 		margin-bottom: 0;
+		@include stainlessbold;
+	}
+
+	a {
+		@include stainlessbold;
+		color: $gray !important;
 	}
 
 }
@@ -48,8 +57,9 @@
 .site-footer {
 	background: $dark-green;
 	color: #fff;
-	padding: 1.2rem 0 0.2rem 0;
+	padding: 1.3rem 0 0.2rem 0;
 	text-align: center;
+	@include stainlessbold;
 
 	.footer-nav {
 		list-style: none;
@@ -64,6 +74,7 @@
 	}
 
 	a {
+		@include stainlessbold;
 		color: #fff;
 		position: relative;
 		margin-right: 1.5rem;

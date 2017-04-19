@@ -1,0 +1,29 @@
+@mixin harriettextlight {
+	font-family: "Harriet Text Light";
+	font-style: normal;
+	font-weight: normal;
+}
+
+@mixin stainless {
+	font-family: Stainless;
+	font-style: normal;
+	font-weight: normal;
+}
+
+@mixin stainlessblack {
+	font-family: "Stainless Black";
+	font-style: normal;
+	font-weight: normal;
+}
+
+@mixin stainlessbold {
+	font-family: Stainless;
+	font-style: normal;
+	font-weight: bold;
+}
+
+@mixin stainlesslight {
+	font-family: "Stainless Light";
+	font-style: normal;
+	font-weight: normal;
+}
