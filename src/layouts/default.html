@@ -1,7 +1,7 @@
 {{!-- This is the base layout for your project, and will be used on every page. --}}
 
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="fi">
   <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -11,6 +11,7 @@
 	<link href="//cloud.webtype.com/css/466a1950-162f-42f4-9bad-008c076be921.css" rel="stylesheet" type="text/css" />
   </head>
   <body class="{{page}}">
+  <a class="skip-link screen-reader-text" href="#main-content">Siirry sisältöön</a>
   <header>
 
 <div class="mobile-toggle" data-responsive-toggle="primary-menu" data-hide-for="large">
@@ -21,7 +22,7 @@
 
 <div class="row">
 
-<div class="header-logo columns small-7 medium-5 large-3"><img src="assets/img/paperinkerays-logo.png" width="270" alt="Paperinkeräys 2017"></div><!--/logo-->
+<div class="header-logo columns small-7 medium-5 large-3"><a href="{{root}}index.html"><img src="assets/img/paperinkerays-logo.png" width="270" alt="Paperinkeräys 2017"></a></div><!--/logo-->
 
 <div class="navigation columns small-12 large-9" id="primary-menu">
 
@@ -42,8 +43,12 @@
 
   </header>
 
+	<div id="main-content">
+
 	{{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
 	{{> body}}
+
+	</div><!--/main-content-->
 
 	<footer>
 	<div class="prefooter">

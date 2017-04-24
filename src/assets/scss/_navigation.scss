@@ -41,6 +41,9 @@ header {
 
 		a {
 			color: $green;
+			&:focus {
+				color: $black;
+			}
 		}
 
 	}
