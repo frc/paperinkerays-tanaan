@@ -124,6 +124,7 @@
 .page-hero .link-box {
 
 	@include stainlessbold;
+	color: $black !important;
 
 	.link-box-content {
 		width: 100%;
@@ -137,6 +138,11 @@
 		}
 	}
 
+}
+
+.page-hero .link-box img {
+	float: right;
+	max-height: 63px;
 }
 
 @include breakpoint(medium) {
@@ -155,4 +161,25 @@
 	background: url('../../assets/img/jatehuolto.jpg');
 	background-size: cover;
 	background-position: top center;
+}
+
+.image-icon {
+	background: url('../../assets/img/image-icon.svg');
+	width: 30px;
+	height: 25px;
+	vertical-align: -0.4rem;
+}
+
+.play-icon {
+	background: url('../../assets/img/play-icon.svg');
+	width: 30px;
+	height: 30px;
+	vertical-align: -0.6rem;
+}
+
+.image-icon, .play-icon {
+	margin-top: 1rem;
+	display: inline-block;
+	margin-left: 0.5rem;
+	background-size: cover;
 }
