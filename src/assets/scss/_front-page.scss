@@ -1,4 +1,4 @@
-.avainluvut, .kokonaisuudet, .tuottajavastuu, .organisaatio {
+.avainluvut, .kokonaisuudet, .tuottajavastuu-section, .organisaatio {
 	padding: 3rem 1.5rem;
 
 	@include breakpoint(medium) {
@@ -58,7 +58,7 @@
 	}
 }
 
-.tuottajavastuu {
+.tuottajavastuu-section {
 	background-color: $dark-green;
 	background-image: url('../../assets/img/kerays-green.svg');
 	background-position: center;

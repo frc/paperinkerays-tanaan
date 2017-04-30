@@ -104,7 +104,8 @@ header {
 .paakirjoitus .paakirjoitus-link a,
 .jatehuolto .jatehuolto-link a,
 .tietoturva .tietoturva-link a,
-.kuormalava .kuormalava-link a {
+.kuormalava .kuormalava-link a,
+.tuottajavastuu .tuottajavastuu-link a {
 
 	@include breakpoint(large) {
 		border-bottom: 3px solid $dark-green;
