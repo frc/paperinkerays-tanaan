@@ -41,6 +41,8 @@ header {
 
 		a {
 			color: $green;
+			font-size: 15px;
+			padding: 0.7rem 0.5rem !important;
 			&:focus {
 				color: $black;
 			}

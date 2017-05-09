@@ -122,11 +122,11 @@
 }
 
 .page-hero .link-box {
-
 	@include stainlessbold;
 	color: $black !important;
 
 	.link-box-content {
+		height: 93px;
 		width: 100%;
 		max-width: 100%;
 		background: #fff;
