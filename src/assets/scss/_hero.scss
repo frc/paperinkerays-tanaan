@@ -125,19 +125,19 @@
 	text-align: center;
 
 	@include stainlessbold;
-	color: $black !important;
+	color: #fff !important;
 
 	a {
 		@include stainlessbold;
-		color: $black !important;
+		color: #fff !important;
 	}
 
 	.link-box-content {
-		height: 93px;
+		height: 60px;
 		width: 100%;
 		max-width: 100%;
-		background: #fff;
-		padding: 1rem;
+		background: $green;
+		padding: 0 1rem;
 		margin-bottom: 1rem;
 
 		@include breakpoint(medium) {
