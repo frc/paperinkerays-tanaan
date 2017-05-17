@@ -122,8 +122,14 @@
 }
 
 .page-hero .link-box {
+
 	@include stainlessbold;
 	color: $black !important;
+
+	a {
+		@include stainlessbold;
+		color: $black !important;
+	}
 
 	.link-box-content {
 		height: 93px;
