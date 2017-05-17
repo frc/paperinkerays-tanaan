@@ -81,7 +81,7 @@
 }
 
 .page-hero { // Hero on normal pages
-
+	position: relative;
 	padding: 3rem 1.5rem;
 
 	@include breakpoint(medium) {
@@ -89,6 +89,7 @@
 	}
 
 	.slogan {
+		z-index: 100;
 		@include stainlessbold;
 		text-transform: uppercase;
 		color: #fff;
@@ -123,6 +124,8 @@
 
 .page-hero .link-box {
 	text-align: center;
+	z-index: 100;
+	position: relative;
 
 	@include stainlessbold;
 	color: #fff !important;
@@ -217,4 +220,15 @@
 	display: inline-block;
 	margin-left: 0.5rem;
 	background-size: cover;
+}
+
+.mask {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: 0.2;
 }
