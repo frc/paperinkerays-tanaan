@@ -185,15 +185,6 @@
 
 .hero-paakirjoitus {
 	background: url('../../assets/img/paakirjoitus.jpg');
-	height: 13rem;
-
-	@include breakpoint(medium) {
-		height: 20rem;
-	}
-
-	@include breakpoint(large) {
-		height: 32rem;
-	}
 }
 
 .page-hero {
