@@ -61,7 +61,7 @@
 	text-align: center;
 	@include stainlessbold;
 
-	@include breakpoint(medium) {
+	@include breakpoint(large) {
 		padding-bottom: 0;
 	}
 
