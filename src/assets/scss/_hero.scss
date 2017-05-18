@@ -143,6 +143,16 @@
 		padding: 0 1rem;
 		margin-bottom: 1rem;
 
+		&:hover, &:focus {
+			color: #fff;
+			background: lighten($dark-green, 5%);
+		}
+
+		&:focus {
+			outline: 1px dotted !important;
+			outline-offset: -4px !important;
+		}
+
 		@include breakpoint(medium) {
 			width: 330px;
 		}

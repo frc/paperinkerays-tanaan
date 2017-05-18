@@ -124,8 +124,8 @@ body p, body a {
 	}
 
 	&:focus {
-		outline: 1px dotted;
-		outline-offset: -4px;
+		outline: 1px dotted !important;
+		outline-offset: -4px !important;
 	}
 }
 
