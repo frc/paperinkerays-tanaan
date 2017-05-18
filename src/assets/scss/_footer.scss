@@ -57,9 +57,13 @@
 .site-footer {
 	background: $dark-green;
 	color: #fff;
-	padding: 1.3rem 0 0.2rem 0;
+	padding: 1.3rem 0;
 	text-align: center;
 	@include stainlessbold;
+
+	@include breakpoint(medium) {
+		padding-bottom: 0;
+	}
 
 	.footer-nav {
 		list-style: none;
