@@ -7,7 +7,7 @@ html, body {
 	width: 100%;
 }
 
-body p, body a {
+body p, body a, body ul, body ol {
 	@include stainlesslight;
 }
 
