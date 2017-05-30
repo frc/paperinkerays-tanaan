@@ -161,8 +161,10 @@
 }
 
 .pk-infogr-link {
+	font-size: 80% !important;
 	@include breakpoint(medium) {
 		width: 370px !important;
+		font-size: 100% !important;
 	}
 }
 
