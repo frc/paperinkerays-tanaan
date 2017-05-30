@@ -160,6 +160,12 @@
 
 }
 
+.pk-infogr-link {
+	@include breakpoint(medium) {
+		width: 370px !important;
+	}
+}
+
 .page-hero .link-box img {
 	float: right;
 	max-height: 63px;
